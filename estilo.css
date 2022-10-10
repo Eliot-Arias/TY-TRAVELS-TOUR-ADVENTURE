@@ -1,0 +1,178 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: url("");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+#contenedor {
+
+}
+
+/*encabezamiento*/
+
+header {
+	background: url("img/logo.png.jpeg");
+	/**background: red;**/
+	width: 950px;
+	height: 125px;
+	background-repeat: no-repeat;
+	background-size: 125px;
+	
+}
+header h1 {
+	font-size: 40px;
+	text-align: center;
+	line-height: 120px;
+
+}
+
+header p {
+	line-height: 10px;
+	float: right;
+
+}
+
+
+
+
+/*menu*/
+
+.menu{
+	list-style: none;
+	padding: 0;
+	width: 55%;
+	max-width: 1000px;
+	float: right;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: darkblue;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+
+
+
+
+#cuerpo {
+	width: 1148px;
+	height: 600px;
+	float: left;
+	background: white;
+	/**background: green;**/
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#cuerpo h3{
+	font-size: 70px;
+	text-align: left;
+	line-height: 50px;
+}
+#cuadros {
+	width: 1325px;
+	height: 600px;
+	float: left;
+	background: red;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#logosdevuelo{
+	width: 1325px;
+	height: 500px;
+	float: left;
+	background: yellow;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+
+/*publicidad*/ 
+
+aside {
+	background: orange;
+	width: 190px;
+	height: 600px;
+	text-align: center;
+	line-height: 300px;
+	float: right;
+	margin-top: 10px;
+}
+aside h4 {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*derechos reservados*/
+footer {
+	background: orange;
+	clear: both;
+}
+footer h3 {
+	font-size: 30px;
+	text-align: center;
+	line-height: 600px;
+}
+
+/*iconos de redes*/
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.0rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
