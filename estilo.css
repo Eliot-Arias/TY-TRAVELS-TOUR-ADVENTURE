@@ -9,9 +9,9 @@ body {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
-#contenedor {
+/*#contenedor {
 
-}
+}*/
 
 /*encabezamiento*/
 
@@ -137,7 +137,7 @@ footer h3 {
     height: 80px;
     margin: 20px;
     border-radius: 50%;
-    transition: all .8s;
+    /*transition: all .8s;*/
     cursor: pointer;
 }
 
@@ -146,10 +146,10 @@ footer h3 {
     box-shadow:  0 0 20px #e60073 ;
 }
 
-.icon:hover:nth-child(2) {
+/*.icon:hover:nth-child(2) {
     background-color: #1877f2;
     box-shadow:  0 0 20px #1877f2;
-}
+}*/
 .icon:hover:nth-child(3) {
     background-color: #25d366;
     box-shadow: 0 0 20px #25d366 ;
