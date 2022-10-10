@@ -18,6 +18,7 @@ body {
 header {
 	background: url("img/logo.png.jpeg");
 	/**background: red;**/
+	
 	width: 950px;
 	height: 125px;
 	background-repeat: no-repeat;
