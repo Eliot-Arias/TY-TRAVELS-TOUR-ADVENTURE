@@ -1,0 +1,23 @@
+.nosotros{
+
+}
+
+.nosotros__info{
+    display: block;
+    margin: auto;    
+    width: 100%;
+    background-color: rgb(234, 121, 121);
+}
+
+.nosotros__info--titulo{
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+.nosotros__mision{
+    
+}
+
+.nosotros__vision{
+
+}
