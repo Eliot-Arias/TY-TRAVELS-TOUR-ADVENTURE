@@ -1,0 +1,113 @@
+.container{
+
+} 
+
+.container__contacto{
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(234, 121, 121);
+}
+
+.container__contacto--title{
+    padding: 25px 0 25px 0;
+    text-align: left;
+    text-indent: 50px;
+}
+
+.container__form__detalles{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    margin-right: 25px;
+}
+
+.formulario__titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.formulario__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr, 1fr;
+    gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario--input{
+    margin-top: 5px;
+}
+
+.item2 select{
+    width: 100%;
+}
+
+.item5{
+    grid-column: 1/3;
+}
+
+.item5 textarea {
+    min-height: 120px;
+    width: 100%;
+}
+
+.formulario--input{
+    display: block;
+}
+
+
+
+/* XD DETALLLES DE CONTACTO XD */
+
+
+.detalles{
+}
+
+.detalles--title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.detalles__contacto{
+    margin-top: 15px;
+}
+
+.detalles__contacto--item{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    border: 0px solid #ccc;
+    background: transparent;
+
+}
+
+.detalles__contacto--icon{
+    background-color:rgba(162, 150, 150, 0.866);
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.detalles__contacto--icon svg{
+    height: 100%;
+    width: 40px;
+    padding: 5px;
+}
+
+.detalles__contacto--info{
+
+}
+
+.detalles__contacto--info h4{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 8px;
+}

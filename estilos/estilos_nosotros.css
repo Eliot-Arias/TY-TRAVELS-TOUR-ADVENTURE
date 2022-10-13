@@ -1,6 +1,6 @@
-.nosotros{
-
-}
+/* .nosotros{
+    
+} */
 
 .nosotros__info{
     display: block;
@@ -11,13 +11,31 @@
 
 .nosotros__info--titulo{
     padding: 25px 0 25px 0;
-    text-align: center;
+    text-align: left;
+    text-indent: 50px;
 }
 
 .nosotros__mision{
-    
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.nosotros__mision--mision{
+    text-align: left;
+    padding: 15px;
 }
 
 .nosotros__vision{
+    border-top: 1px solid black;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 25px;
+}
 
+.nosotros__vision--vision{
+    text-align: left;
+    padding: 15px;
 }
