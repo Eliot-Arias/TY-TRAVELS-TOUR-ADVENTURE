@@ -1,0 +1,38 @@
+.titulo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(234, 121, 121);
+}
+
+.titulo--h1 {
+    padding: 25px 25px 25px 25px;
+    text-align: left;
+}
+
+.container{
+    margin: 0 10%;
+    text-align: justify;
+}
+
+.subtitle--h3{
+    color: #a31919;
+}
+
+p{
+    font-family:
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding: 10px 0;
+}

@@ -1,0 +1,15 @@
+
+
+
+.titulo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(234, 121, 121);
+}
+
+.titulo--h1{
+    padding: 25px 0 25px 0;
+    text-align: left;
+    text-indent: 50px;
+}

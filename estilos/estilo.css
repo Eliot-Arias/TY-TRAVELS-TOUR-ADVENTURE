@@ -123,8 +123,9 @@ hr{
 	grid-gap: 5px 5px;
 }
 
-.galery__container--item img{
-	width:100%
+.galery--img{
+	width: 100%;
+	height: 224px;
 }
 
 .galery__container--item img:hover{
