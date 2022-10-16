@@ -16,54 +16,59 @@ body {
 .header {
 	display: flex;
 	width: 100%;
-	height: 140px;
-	justify-content: space-between;
+	height: 100%;
 	background-color: rgb(216, 77, 77);
 }
 
 /* Contenedor del logo */
-.header__img--logo {
-	background-image: url(../img/logosinfondo.png);
-	background-size: cover;
-	width: 150px;
-	height: 100%;
+.header__logo {
+	width: 80px;
+	height: 80px;
+	margin-left: auto;
 }
+
+.header__logo--img{
+	width: 80px;
+	height: 80px;
+}
+
 
 /* HEADER */
 .header__nav {
 	height: fit-content;
-	margin: auto 0 auto 0;
 }
 
 .nav__barNav {
 	display: flex;
 	list-style: none;
-
 }
 
 .header__nav--li {
+	flex-grow: 1;
 	text-align: center;
-	padding: 20px;
+	padding: 15px 15px;
+}
+
+.header__nav--li:hover {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__nav--li a {
+	display: block;
+	padding: 15px 15px;
 	text-decoration: none;
 	color: #fff;
 }
 
-.header__nav--li a:hover {
-	color: rgb(0, 0, 0);
-	text-decoration: underline;
-}
 
 /* SLIDER */
 
 .containerSlider {
-	max-width: 100%;
+	/* max-width: 100%; */
 	width: 100%;
 	margin: auto;
 	overflow: hidden;
-	position: relative;
+	/* position: relative; */
 }
 
 .slider {
@@ -129,7 +134,9 @@ hr{
 .galery--img{
 	width: 100%;
 	height: 224px;
+	border-radius: 5px;
 }
+
 
 .galery__container--item img:hover{
 	transform: scale(1.01);
@@ -154,18 +161,15 @@ hr{
 .footer__container {
 	display: flex;
 	justify-content: flex-start;
-	height: 200px;
-
 }
 
 .footer__logo {
 	height: 100%;
-	position: relative;
 }
 
 .footer__logo--logo {
-	width: 100%;
-	height: 100%;
+	width: 150px;
+	height: 150px;
 }
 
 .footer__info {
@@ -191,16 +195,12 @@ hr{
 }
 
 .footer__img{
-	width: fit-content;	
 	height: 100%;
-	overflow: hidden;
 }
 
-.footer__img--img {	
-	height: 100%;
+.footer__img--img {
+	height: 150px;
 	width: 170px;
-	background-image: url(../img/viajero_1.png);
-	background-repeat: no-repeat;
 	margin-right: 5px;
 }
 
@@ -215,10 +215,100 @@ hr{
 	width: 30px;
 	height: 30px;
 	padding: 2px;
-	border-right: 1px solid white;
 }
 
 .btn-imagen:hover{
 	cursor: pointer;
 	background: rgba(0, 0, 0, 0.3)
+}
+
+@media (max-width: 768px){	
+	/* header Responsivo */
+	.btn-imagen{
+		display: block;
+	}
+
+	.btn-imagen img{
+		width: 100%;
+	}
+
+	.header__nav{
+		position: absolute;
+		width: 65%;
+		top: 30px;
+		margin-left: -65%;
+		background-color: rgb(216, 77, 77);
+		transition: all 0.3s;
+	}
+
+	.nav__barNav{
+		flex-direction: column;
+	}
+
+	.header__logo {
+		display: none;
+	}
+
+	#btn-menu:checked ~ .header__nav{
+		margin: 0;
+	}
+
+
+	/* footer responsivo */
+
+	.footer__img{
+		display: none;
+	}
+
+	.footer__container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__info{
+		border-left: 0;
+		border-top: 2px solid white;
+		padding-top: 15px;
+	}
+
+	/* slider :v */
+
+	.slider__btn {
+		top: 25%;
+	}
+
+	.slider {
+		height: 500px;
+	}
+
+	/* galery responsive */
+	
+
+	.galery__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		padding: 10px;
+		grid-gap: 5px 5px;
+	}
+
+}
+
+@media (max-width: 380px){
+
+	.slider {
+		height: 250px;
+	}
+
+	.slider__btn {
+		top: 18%;
+	}
+	.galery__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		padding: 10px;
+		grid-gap: 5px 5px;
+	}
+
 }

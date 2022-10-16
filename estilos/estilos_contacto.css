@@ -113,3 +113,19 @@
     color: rgb(0, 0, 0);
     margin-bottom: 8px;
 }
+
+@media (max-width: 600px) {   
+
+    .container__form__detalles{
+        flex-direction: column;
+    }
+
+    .formulario__container {
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr, 1fr 1fr;
+        gap: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
